@@ -63,9 +63,12 @@ function funcionCompra() {
 
 funcionCompra();
 
-comprar = prompt("QUIERE SEGUIR COMPRANDO ? \n RESPONDER SI PARA SEGUIR O NO PARA SALIR").toUpperCase();
+while ( comprar == "SI") {
+    funcionCompra();
+    comprar = prompt("QUIERE SEGUIR COMPRANDO ? \n RESPONDER SI PARA SEGUIR O NO PARA SALIR").toUpperCase();
+}
 
-funcionCompra();
+
 
 
 

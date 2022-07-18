@@ -44,29 +44,24 @@ if (productosCategorias) {
 
 const carrito =[];
 
-
-
 let comprar = prompt ("DESEA COMPRAR ALGUN PRODUCTO ? \n RESPONDER SI PARA SEGUIR O NO PARA SALIR").toUpperCase();
-let productoSeleccionado;
 
-function funcionCompra() {
-    if (comprar == "SI") {
-        productoSeleccionado = prompt ("QUE PRODUCTO DESEA COMPRAR ?").toUpperCase();
+while (comprar == "SI") {
+        let productoSeleccionado = prompt ("QUE PRODUCTO DESEA COMPRAR ?").toUpperCase();
         alert("SU PRODUCTO FUE AGREGADO CORRECTAMENTE ")
         carrito.push(productoSeleccionado);
         alert ("ESTOS PRODUCTOS AGREGO A SU CARRITO: " +carrito)
-    } else {
-        alert("GRACIAS POR SU ATENCION")
+        comprar = prompt ("DESEA COMPRAR ALGUN PRODUCTO ? \n RESPONDER SI PARA SEGUIR O NO PARA SALIR").toUpperCase();
+
     }
     
-}
 
-funcionCompra();
 
-while ( comprar == "SI") {
-    funcionCompra();
-    comprar = prompt("QUIERE SEGUIR COMPRANDO ? \n RESPONDER SI PARA SEGUIR O NO PARA SALIR").toUpperCase();
-}
+    
+
+
+
+
 
 
 
